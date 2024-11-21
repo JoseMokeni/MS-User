@@ -1,5 +1,6 @@
 package tn.itbs.projet.controller;
 
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -10,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "/utilisateur")
+@AllArgsConstructor
 public class UtilisateurController {
 
     private UtilisateurService utilisateurService;
